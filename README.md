@@ -2,7 +2,7 @@
 一个基于react的外卖项目
 
 ## API地址
-[http://o2o.leimingtech.com/leimingtech-front/doc/view/index](http://o2o.leimingtech.com/leimingtech-front/doc/view/index)
+跟工程项目放在同一文件夹，同级
 
 ## 技术栈
 项目基于webpack构建，用到的技术有：
@@ -45,7 +45,7 @@
 ### 基本配置
 
 #### 关于端口
-默认端口8000，如需修改请修改/cfg/default.js -> dfltPort
+默认端口7389，如需修改请修改/cfg/default.js -> dfltPort
 
 #### 关于代理
 
@@ -55,14 +55,12 @@
         ...,
         proxy: {
           '/api/*': {
-            pathRewrite: {'^/api' : '/rest/api'},
-            target: 'http://o2o.leimingtech.com/leimingtech-front',
-            changeOrigin: true
+            target: 'http://localhost:7390',
+            changeOrigin: false
           }
         }
     }
-    // 默认代理到http://o2o.leimingtech.com/leimingtech-front
-    pathRewrite 路径重写参数，将匹配路径替换为想要修改的路径
+    // 默认api代理到http://localhost:7390
     target: 代理目标地址
     changeOrigin: 是否开启跨域
 ```
@@ -123,11 +121,11 @@
 - [ ] 【业务】搜索页
 - [ ] 【业务】个人中心页
 - [ ] 【业务】商户详情页
-- [ ] 【业务】登录注册等
-- [ ] 【业务】首页功能开发
-- [ ] 【业务】地图选择页开发
-- [ ] 图片预览功能
-- [ ] ListView开发
-- [ ] Img组件开发
-- [ ] demo页开发
+- [x] 【业务】登录注册等
+- [x] 【业务】首页功能开发
+- [x] 【业务】地图选择页开发
+- [x] 图片预览功能
+- [x] ListView开发
+- [x] Img组件开发
+- [x] demo页开发
 - [x] 工程构建
