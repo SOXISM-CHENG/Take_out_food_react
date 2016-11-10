@@ -1,0 +1,11 @@
+{
+    presets: ['es2015', 'react', 'stage-0'],
+    "plugins": [
+        'add-module-exports',
+        'babel-plugin-transform-decorators-legacy',
+        ["import", {
+            "style": true,
+            "libraryName": "antd"
+        }]
+    ]
+}

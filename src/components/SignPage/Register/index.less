@@ -1,0 +1,152 @@
+/**
+ * @autor MoCheng
+ */
+/*
+ * @Author: MoCheng
+ */
+@import url('../../../styles/theme.less');
+.register-box{
+	button{outline:none;}
+	background:#fff;
+	.sign_head{
+		border-bottom: 2px solid @primary-color ;
+       padding: 8px 0px 8px 20px;
+		.sign_logo{
+		 	width: 180px;
+	        .sign_img {
+	            width: 144px;
+			    height: 44px;
+		        display: inline-block;
+	        }
+		}
+	}
+	.sign_body{
+	    width: 50%;
+	    margin: 65px auto 0px;
+    	.info-box{
+			margin-top: -53px;
+    	}
+    	.validate-info{
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #EEE;
+            border-radius: 2px;
+            font-size: 12px;
+            background: #f6f6f6;
+            padding-left: 30px;
+            position:relative;
+            i{
+                width: 20px;
+                height: 20px;
+                background-image: url(../../../images/icons.png);
+                position: absolute;
+                top: 10px;
+                left: 5px;
+            }
+            .i3{
+                background-position: 296px 28px;
+            }
+        }
+		.sign_input{
+			.input-group-addon{
+                margin-bottom: 15px;
+            }
+            input {
+	 	        height: 40px;
+			    width: 100%;
+			    line-height: 40px;
+			    width: 100%;
+			    font-size: 14px;
+			    margin: 0 auto;
+			    border: 0px;
+			    padding-left: 8px;
+		        border: 1px solid #ccc;
+	        }
+	        .ant-checkbox-vertical{
+	        	a {
+	                text-decoration: none;
+	               	color: #FA9700;
+	               	&:hover{
+	               		text-decoration: underline;
+	               	}
+	            }
+	        }
+	        .agreement_right{
+                float:right;
+            }
+		}
+		.sign_btn{
+        	border-color: @primary-color ;
+		    color: #6B450A;
+		    background: @primary-color ;
+		    padding: 7px 20px 6px;
+		    font-size: 14px;
+		    font-weight: 700;
+		    line-height: 1.5;
+		    letter-spacing: .1em;
+		    -moz-user-select: -moz-none;
+		    -ms-user-select: none;
+		    user-select: none;
+        }
+        .sign_btn_disable{
+	    	background: #ccc;
+		    border-color: #ccc;
+		    color: #f2f2f2;
+        }
+		.ant-pwd-strength {
+		  display: inline-block;
+		  margin-left: 8px;
+		  line-height: 32px;
+		  height: 32px;
+		  vertical-align: middle;
+	      margin-bottom: 15px;
+		}
+
+		.ant-pwd-strength-item {
+		  float: left;
+	      width: 87px;
+		  height: 24px;
+		  line-height: 8px;
+		  list-style: none;
+		  background-color: #eee;
+	      margin-right: 5px;
+		  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+
+		.ant-pwd-strength-item-1 {
+		  border-top-left-radius: 6px;
+		  border-bottom-left-radius: 6px;
+		}
+
+		.ant-pwd-strength-item-3 {
+		  border-top-right-radius: 6px;
+		  border-bottom-right-radius: 6px;
+		  margin-right: 8px;
+		}
+
+		.ant-pwd-strength-low .ant-pwd-strength-item-1, .ant-pwd-strength-medium .ant-pwd-strength-item-1, .ant-pwd-strength-high .ant-pwd-strength-item-1 {
+		  background-color: #FAC450;
+		}
+
+		.ant-pwd-strength-medium .ant-pwd-strength-item-2, .ant-pwd-strength-high .ant-pwd-strength-item-2 {
+		  background-color: rgba(135, 208, 104, .6);
+		  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9987D068,endColorstr=#9987D068);
+		}
+
+		.ant-pwd-strength-high .ant-pwd-strength-item-3 {
+		  background-color: #87D068;
+		}
+		.ant-form-text{
+	        padding-right: 0px;
+		    position: absolute;
+		    top: 8px;
+		    margin-left: 30px;
+		    font-size: 14px;
+		    color: #fff;
+		}
+	}
+	.footer {
+	    border-top: 0px;
+	}
+
+}

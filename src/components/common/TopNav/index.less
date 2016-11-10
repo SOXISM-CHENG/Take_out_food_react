@@ -1,0 +1,62 @@
+/*
+ * @Author: mocheng
+ */
+@import url('../../../styles/theme.less');
+.top-nav{
+    @nav-height: 36px;
+    height: @nav-height;
+    line-height: @nav-height;
+    position: relative;
+    z-index: 10;
+    background-color: @primary-color;
+    .nav-content{
+        width: @max-width;
+        height: 100%;
+        margin: auto;
+        color: #6b450a;
+    }
+    .nav-left{
+        float: left;
+        .marker-icon{
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        .city{
+            margin-right: 8px;
+        }
+        .change-address{
+            margin-left: 5px;
+            color: #fb4e44;
+            cursor: pointer;
+        }
+    }
+    .nav-right{
+        float: right;
+
+        div{
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .moblie-home{
+            .moblie{
+                margin-right: 30px;
+            }
+            .mr5{
+                margin-right: 5px;
+            }
+            i{
+                background-color: #6b450a;
+                font-size: 18px;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                vertical-align: middle;
+                color: @primary-color ;
+                border-radius: 10px;
+            }
+        }
+
+    }
+}

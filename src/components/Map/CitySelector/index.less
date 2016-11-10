@@ -1,0 +1,68 @@
+/*
+ * @Author: MoCheng
+ */
+@import url('../../../styles/theme.less');
+.city-selector-wrap {
+    font-size: 14px;
+    color: #434343;
+    line-height: normal;
+    text-align: left;
+    overflow: auto;
+    height: 100%;
+    .tool-bar{
+        font-size: 16px;
+        padding: 10px 0;
+        .clearfix();
+        .guess-city{
+            float: left;
+            a{
+                display: inline-block;
+                padding: 0 20px;
+                height: 28px;
+                background-color: #fff5f4;
+                text-align: center;
+                line-height: 28px;
+                color: #fe4d3d;
+            }
+        }
+        .city-search-wrap{
+            float: left;
+            margin-left: 60px;
+            span{
+                height: 30px;
+                line-height: 30px;
+                padding-right: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+    .city-field {
+        padding: 12px 0;
+        border-top: 1px solid #ddd;
+        position: relative;
+        .letter {
+            display: block;
+            position: absolute;
+            background-color: #eeeeee;
+            color: #898989;
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            width: 40px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        ul {
+            .clearfix();
+            margin-left: 70px;
+            li {
+                float: left;
+                width: 68px;
+                margin-bottom: 5px;
+                &:hover{
+                    color: @active-color;
+                }
+            }
+        }
+    }
+}

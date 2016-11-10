@@ -1,0 +1,323 @@
+/*
+ * @Author: mocheng
+ */
+
+@import url('./theme.less');
+@import url('./icon.less');
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    color: @font-color;
+    background: @body-background;
+    font-family: @font-family;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+#app {
+    min-width: @max-width;
+    height: 100%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #a9a9a9 !important;
+    opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #a9a9a9 !important;
+    opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #a9a9a9 !important;
+    opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #a9a9a9 !important;
+    opacity:1;
+}
+
+// 设置百度地图Autocomplete层级高于antd的modal
+.tangram-suggestion-main{
+    z-index: 1001;
+}
+
+.ant-checkbox-checked {
+    .ant-checkbox-inner {
+        background-color: @active-color;
+        border-color: @active-color;
+    }
+    &:hover .ant-checkbox-inner {
+        border-color: @active-color;
+    }
+}
+
+.ant-select {
+    .ant-select-selection--single {
+        border-radius: 0;
+    }
+    .ant-select-selection:focus,
+    .ant-select-selection:active,
+    .ant-select-selection:hover,
+    .ant-select-focused .ant-select-selection,
+    &.ant-select-open .ant-select-selection {
+        border-color: @active-color;
+        box-shadow: none;
+    }
+}
+
+.ant-select-dropdown {
+    border-radius: 0;
+}
+
+.ant-select-dropdown-menu-item:hover,
+.ant-select-dropdown-menu-item-active {
+    background: #fffadf;
+}
+.ant-input{
+    border-radius: 0;
+    &:focus,
+    &:hover{
+        outline: none;
+        box-shadow: none;
+        border-color: #d9d9d9;
+    }
+}
+.ant-btn.ant-btn-primary,
+.ant-btn.ant-btn-primary.ant-btn-clicked{
+    color: @font-active-color;
+    background-color: @primary-color;
+    border-color: @primary-color;
+    outline: none;
+    box-shadow: none;
+    &:after {
+        content: none;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+        color: @font-active-color;
+        border-color: @primary-color;
+    }
+}
+.ant-btn.ant-btn-ghost,
+.ant-btn.ant-btn-ghost.ant-btn-clicked{
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+    &:after {
+        content: none;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+        color: @active-color;
+        border-color: @active-color;
+    }
+}
+.ant-btn,
+.ant-btn.ant-btn-clicked{
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+    &:after {
+        content: none;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+        color: @active-color;
+        border-color: @active-color;
+    }
+}
+
+.full-screen-modal{
+    .ant-btn-primary{
+        position: relative;
+        left: -45%;
+        width: 100px;
+    }
+    .ant-modal-content{
+        border-radius: 0;
+        .ant-modal-footer{
+            .ant-btn-ghost{
+                display: none;
+            }
+        }
+    }
+    .ant-modal-footer{
+        border-radius: 0;
+    }
+}
+.open-image-modal{
+    .example_img{
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .defauleImg{
+        width: 100%;
+        height: 318px;
+        font-size: 68px;
+        margin: 5% auto;
+        padding: 38px;
+        padding-top: 10px;
+    }
+}
+.ant-modal-body{
+    .ant-btn-primary{
+        position: absolute;
+        bottom: 10px;
+        right: 100px;
+    }
+    .dialog-body{
+        // padding: 30px;
+    }
+    .name-box{
+        .old_name_style{
+            margin: 0px 0 25px;
+            color: #666;
+            .old_name_lable{
+                float: right;
+            }
+            .old_name_text{
+                color: #bbb;
+            }
+        }
+    }
+    .paypass-box{
+        .bind_phone_style{
+            margin: 0px 0 25px;
+            color: #666;
+            .bind_phone_lable{
+                float: right;
+            }
+            .bind_phone_text{
+                color: #f76120;
+            }
+        }
+        .validatCodeType{
+            .ant-form-item-control{
+                width: 55%;
+                .input-group-addon{
+                    position: absolute;
+                    padding: 5px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .phone-box{
+        .ant-steps{
+            margin: 10px 10px 30px;
+            width: auto;
+        }
+        .step_title{
+            font-size: 16px;
+            color: @primary-color ;
+        }
+        .next_btn{
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 500;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            line-height: 1.5;
+            padding: 5px 15px;
+            border-radius: 6px;
+            user-select: none;
+            transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            position: relative;
+            border-color: #2db7f5;
+            color: #fff;
+            background-color: #2db7f5;
+            position: absolute;
+            bottom: 10px;
+            right: 100px;
+        }
+        .bind_phone_style{
+            margin: 0px 0 25px;
+            color: #666;
+            .bind_phone_lable{
+                float: right;
+            }
+            .bind_phone_text{
+                color: #f76120;
+            }
+        }
+        .validatCodeType{
+            .ant-form-item-control{
+                width: 55%;
+                .input-group-addon{
+                    position: absolute;
+                    padding: 5px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .input-group-addon{
+            margin-bottom:25px;
+        }
+    }
+    .password-box{
+        .ant-pwd-strength-item {
+          width: 74px;
+        }
+        .ant-form-text{
+            margin-left: 28px;
+        }
+        .bind_phone_style{
+            margin: 0px 0 25px;
+            color: #666;
+            .bind_phone_lable{
+                float: right;
+            }
+            .bind_phone_text{
+                color: #f76120;
+            }
+        }
+        .validatCodeType{
+            .ant-form-item-control{
+                width: 55%;
+                .input-group-addon{
+                    position: absolute;
+                    padding: 5px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .sex-box{
+        margin-bottom: -20px;
+        .ant-radio-group {
+            line-height: 0;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+/*
+ * @Author: MoCheng
+ */
+@import url('../../../styles/theme.less');
+.user-box-unlogin {
+    margin-right: 30px;
+    span {
+        margin: 0px 20px;
+    }
+}
+
+.user-box-select {
+    position: relative;
+    z-index: 10;
+    line-height: 36px;
+    margin-right: 10px;
+    &:hover .login-menu {
+        display: block;
+    }
+    .loginbar-username{
+        .fa{
+
+        }
+    }
+    .login-menu {
+        background-color: #ffffff;
+        position: absolute;
+        top: 36px;
+        right: 0;
+        display: none;
+        border: 1px solid #DCDCDC;
+        box-shadow: 0px 2px 3px #ccc;
+        a {
+            width: 128px;
+            padding-left: 14px;
+            color: #434343;
+            display: block;
+            &:hover{
+                background: #f5f5f5;
+                color: @active-color;
+            }
+        }
+    }
+}
+

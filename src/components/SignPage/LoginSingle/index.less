@@ -1,0 +1,164 @@
+/*
+ * @Author: MoCheng
+ */
+@import url('../../../styles/theme.less');
+.loginsingle_box {
+    position: relative;
+    .ant-form-item {
+        margin-bottom: 0px;
+    }
+    .validate-info {
+        margin-top: -38px;
+        padding: 10px;
+        border: 1px solid #EEE;
+        border-radius: 2px;
+        font-size: 12px;
+        background: #f6f6f6;
+        padding-left: 30px;
+        position: relative;
+        i {
+            width: 20px;
+            height: 20px;
+            background-image: url(../../../images/icons.png);
+            position: absolute;
+            top: 10px;
+            left: 5px;
+        }
+        .i3 {
+            background-position: 296px 28px;
+        }
+    }
+    .sign_name {
+        height: 40px;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 40px;
+        border-bottom: 1px solid #eee;
+        font-family: "Microsoft YaHei";
+        font-weight: 400;
+        color: #666;
+        font-size: 14px;
+        .span-left {
+            float: left;
+        }
+        .span-right {
+            float: right;
+            color: #666;
+            position: relative;
+            &:hover {
+                text-decoration: underline;
+            }
+            i {
+                height: 14px;
+                width: 14px;
+                top: 15px;
+                right: -20px;
+                position: absolute;
+                background-image: url(../../../images/sp-normal.png);
+            }
+            .i1 {
+                background-position: -639px -677px;
+            }
+            .i2 {
+                background-position: -1268px -491px;
+            }
+        }
+    }
+    .sign_input {
+        margin-top: 15px;
+        position: relative;
+        .input-group-addon {
+            margin-top: 15px;
+        }
+        .icon {
+            position: absolute;
+            z-index: 2;
+            left: 18px;
+            width: 18px;
+            height: 18px;
+            background-image: url(../../../images/sp-normal.png);
+            top: 12px;
+        }
+        .user-photo {
+            background-position: -1250px -617px;
+        }
+        .key-photo {
+            background-position: -1250px -527px;
+        }
+        .phone-photo {
+            background-position: -1250px -581px;
+        }
+        input {
+            height: 40px;
+            width: 100%;
+            line-height: 40px;
+            width: 100%;
+            font-size: 14px;
+            margin: 0 auto;
+            border: 0px;
+            padding-left: 45px;
+            border: 1px solid #ccc;
+        }
+        img {
+            margin-left: 10px;
+        }
+    }
+    .infos {
+        height: 35px;
+        // width: 300px;
+        color: #999;
+        line-height: 48px;
+        margin: 5px auto;
+        .btn-Link {
+            color: #999;
+            display: inline-block;
+            margin-left: 8px;
+        }
+        .ant-checkbox-vertical {
+            display: inline-block;
+        }
+        .sign_forgetpasssword {
+            display: inline-block;
+            float: right;
+            a {
+                text-decoration: none;
+                color: #FA9700;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .ant-btn.sign_btn {
+        height: 40px;
+        width: 100%;
+        line-height: 35px;
+        border-radius: 3px;
+        font-size: 18px;
+        border-color: @primary-color ;
+        color: #6B450A;
+        background: @primary-color ;
+        border: 0px;
+        position: static;
+    }
+    .top{
+        margin-top: 25px;
+    }
+    .sign_agreement {
+        margin-top: 15px;
+        .clearfix();
+        .agreement_left {
+            float: left
+        }
+        .agreement_right {
+            float: right;
+        }
+        a {
+            text-decoration: none;
+            color: #FA9700;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

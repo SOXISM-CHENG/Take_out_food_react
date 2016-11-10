@@ -1,0 +1,1224 @@
+/*
+ * @Author: mocheng
+ */
+
+
+/**
+ * 标示所有的页面上用到的图标的css文件。
+ * 所有的图标的dom结构为（<i></i>），涉及到的相关图片都用css spirit整合在了icon.png和_icon.png中。
+ * Ex:
+ *   <i class="icon show-me"></i>
+ * 第一个参数标示基本属性，show-me用来改变background-position以及高宽来显示图片。
+ *
+ * @author XU Kai(xukai@meituan.com)
+ * @date 2013.12.26
+ */
+
+.i-icon {
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+    /*解决在chrome下小图标的问题*/
+    display: inline-block;
+}
+/* 业务逻辑相关按钮 */
+
+.i-addcart {
+    width: 26px;
+    height: 26px;
+}
+
+.i-addcart-plus {
+    width: 26px;
+    height: 26px;
+    background-position: 0px -28px;
+}
+
+.i-arrowdown {
+    width: 8px;
+    height: 8px;
+    background-position: -33px 0;
+}
+
+.i-arrowdown-hover {
+    background-position: -47px 0;
+}
+
+.i-arrowup {
+    width: 8px;
+    height: 8px;
+    background-position: -33px -14px;
+}
+
+.i-arrowup-hover {
+    width: 8px;
+    height: 8px;
+    background-position: -47px -14px;
+}
+
+.i-arrowgo {
+    width: 14px;
+    height: 14px;
+    background-position: -244px -2px;
+}
+
+.i-arrowgo-l {
+    width: 20px;
+    height: 20px;
+    background-position: -321px -43px;
+}
+
+.i-arrowgo-hover {
+    width: 14px;
+    height: 14px;
+    background-position: -244px -23px;
+}
+
+.i-tuan {
+    width: 14px;
+    height: 14px;
+    background-position: -65px 0;
+}
+
+.i-phone {
+    width: 10px;
+    height: 14px;
+    background-position: -88px 0;
+}
+
+.i-mobile {
+    width: 10px;
+    height: 10px;
+    background-position: -494px -3px;
+}
+
+.i-search {
+    width: 14px;
+    height: 14px;
+    background-position: -106px 0;
+}
+
+.i-help {
+    width: 16px;
+    height: 14px;
+    background-position: -127px 0;
+}
+
+.i-ordered {
+    width: 10px;
+    height: 10px;
+    background-position: -46px -31px;
+}
+
+.i-discount {
+    height: 15px;
+    width: 15px;
+    background-position: -65px -21px;
+}
+
+.i-onsale {
+    width: 86px;
+    height: 38px;
+    background-position: 0 -57px;
+}
+
+.i-star {
+    width: 13px;
+    height: 12px;
+    background-position: -154px 0;
+}
+
+.i-bigstar {
+    width: 21px;
+    height: 20px;
+    background-position: -102px -119px;
+}
+
+.i-smallstar {
+    width: 11px;
+    height: 10px;
+    background-position: -352px 0;
+}
+
+.i-star-empty {
+    width: 13px;
+    height: 12px;
+    background-position: -174px 0;
+}
+
+.i-bigstar-empty {
+    width: 21px;
+    height: 20px;
+    background-position: -102px -147px;
+}
+
+.i-smallstar-empty {
+    width: 11px;
+    height: 10px;
+    background-position: -374px 0;
+}
+
+.i-mediumstar-empty {
+    width: 16px;
+    height: 15px;
+    background-position: -468px -21px;
+}
+
+.i-mediumstar {
+    width: 16px;
+    height: 15px;
+    background-position: -468px 0;
+}
+
+.i-offsale {
+    background-position: 0 -98px;
+    width: 86px;
+    height: 38px;
+}
+
+.i-discount-large {
+    height: 17px;
+    width: 17px;
+    background-position: -85px -20px;
+}
+
+.i-home {
+    width: 18px;
+    height: 15px;
+    background-position: -195px -2px;
+}
+
+.i-service-avatar {
+    width: 52px;
+    height: 49px;
+    background-position: 0 -244px;
+}
+
+.i-locate {
+    width: 10px;
+    height: 16px;
+    background-position: -220px -23px;
+}
+
+.i-locateblue {
+    width: 17px;
+    height: 17px;
+    background-position: -270px -21px;
+}
+
+.i-triangle-down {
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 6px transparent;
+    border-top-color: #6c6c6c;
+    line-height: 0;
+    font-size: 0;
+}
+
+.i-triangle-up {
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 6px transparent;
+    border-bottom-color: #737373;
+    line-height: 0;
+    font-size: 0;
+}
+
+.i-arrow-down {
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid 6px transparent;
+    border-top-color: #FFAA1E;
+    line-height: 0;
+    font-size: 0;
+}
+
+.i-arrowright {
+    width: 14px;
+    height: 14px;
+    background-position: -223px 0;
+}
+
+
+/* 地图专用图标 */
+
+.i-mapok {
+    width: 22px;
+    height: 23px;
+    background-position: -101px -56px;
+}
+
+.i-mapok-empty {
+    width: 22px;
+    height: 23px;
+    background-position: -101px -88px;
+}
+
+.i-maparrow {
+    width: 156px;
+    height: 14px;
+    background-position: -135px -59px;
+}
+
+.i-maparrow-empty {
+    width: 156px;
+    height: 14px;
+    background-position: -135px -84px;
+}
+
+.i-mapwrong {
+    width: 22px;
+    height: 23px;
+    background-position: -101px -177px;
+}
+
+
+/* 地图专用图标 end */
+
+.i-tipsdialog-arrowup {
+    width: 20px;
+    height: 14px;
+    background-position: -269px -2px;
+}
+
+.i-cross {
+    height: 15px;
+    width: 15px;
+    background-position: -297px -1px;
+}
+
+.i-qrcode-cross {
+    width: 9px;
+    height: 9px;
+    background-position: -494px -24px;
+}
+
+.i-cross-small {
+    height: 10px;
+    width: 10px;
+    background-position: -326px -4px;
+}
+
+.i-first {
+    height: 17px;
+    width: 17px;
+    background-position: -297px -21px;
+}
+
+.special {
+    color: #fa9700;
+}
+
+.i-reimbursement {
+    height: 17px;
+    width: 17px;
+    background-position: -349px -90px;
+}
+
+.i-di {
+    width: 17px;
+    height: 17px;
+    background-position: -297px -67px;
+}
+
+.i-ticket {
+    height: 17px;
+    width: 17px;
+    background-position: -323px -21px;
+}
+
+.i-dialog-right {
+    height: 28px;
+    width: 28px;
+    background-position: -99px -212px;
+}
+
+.i-dialog-wrong {
+    height: 28px;
+    width: 28px;
+    background-position: -99px -250px;
+}
+
+
+/* 弹出框内部的钩钩叉叉等等等 start */
+
+.i-dialog-bhook {
+    width: 50px;
+    height: 50px;
+    background-position: -132px -190px;
+}
+
+.i-dialog-shook {
+    width: 50px;
+    height: 50px;
+    background-position: -191px -190px;
+}
+
+.i-dialog-bwarn {
+    width: 50px;
+    height: 50px;
+    background-position: -250px -189px;
+}
+
+.i-dialog-swarn {
+    width: 32px;
+    height: 32px;
+    background-position: -141px -246px;
+}
+
+.i-dialog-bdash {
+    width: 32px;
+    height: 32px;
+    background-position: -200px -246px;
+}
+
+.i-dialog-bdash-small {
+    width: 26px;
+    height: 26px;
+    background-position: -57px -290px;
+}
+
+.i-dialog-sdash {
+    width: 32px;
+    height: 32px;
+    background-position: -260px -246px;
+}
+
+
+/* 弹出框内部的钩钩叉叉等等等 end */
+
+.i-warm {
+    height: 18px;
+    width: 18px;
+    background-position: -349px -20px;
+}
+
+
+/* 页面内容为空的几个图标 start */
+
+.i-uncomment {
+    width: 33px;
+    height: 35px;
+    background-position: -133px -115px;
+}
+
+.i-lottery {
+    width: 39px;
+    height: 36px;
+    background-position: -229px -115px;
+}
+
+.i-gift {
+    width: 31px;
+    height: 34px;
+    background-position: -183px -115px;
+}
+
+
+/* 页面内容为空的几个图标 end */
+
+.i-district-arrow {
+    width: 16px;
+    height: 8px;
+    background-position: -372px -24px;
+}
+
+.i-city-arrow {
+    width: 6px;
+    height: 10px;
+    background-position: -399px -1px;
+}
+
+.i-hot-poi {
+    width: 25px;
+    height: 24px;
+    background-position: -100px -288px;
+}
+
+.i-more-poi {
+    width: 23px;
+    height: 25px;
+    background-position: -101px -322px;
+}
+
+.i-rest-poi {
+    width: 25px;
+    height: 25px;
+    background-position: -100px -358px;
+}
+
+
+/* 登录页面的几个小图标 start */
+
+.i-loginuser {
+    width: 14px;
+    height: 15px;
+    background-position: -397px 0;
+}
+
+.i-loginmobile {
+    width: 12px;
+    height: 15px;
+    background-position: -423px 0;
+}
+
+
+/* 登录页面的几个小图标 end */
+
+.i-cry {
+    width: 50px;
+    height: 50px;
+    background-position: 0 -304px;
+}
+
+.i-hook {
+    width: 17px;
+    height: 13px;
+    background-position: -443px -23px;
+}
+
+.i-minus {
+    width: 17px;
+    height: 17px;
+    background-position: -297px -44px;
+}
+
+.i-backtop {
+    width: 30px;
+    height: 17px;
+    background-position: -59px -146px;
+}
+
+.i-plus {
+    width: 12px;
+    height: 12px;
+    background-position: -352px -47px;
+}
+
+.i-free-gift {
+    width: 17px;
+    height: 17px;
+    background-position: -297px -90px;
+}
+
+.i-triangle-dn {
+    width: 10px;
+    height: 6px;
+    background-position: -514px -5px;
+}
+
+.i-shopping-cart {
+    width: 25px;
+    height: 20px;
+    background-position: -60px -198px;
+}
+
+.i-free {
+    width: 17px;
+    height: 17px;
+    background-position: -323px -67px;
+}
+
+.i-shopping {
+    width: 50px;
+    height: 50px;
+    background-position: 0 -390px;
+}
+
+.i-zero {
+    width: 17px;
+    height: 17px;
+    background-position: -323px -90px;
+}
+
+.i-dialog-tri {
+    width: 8px;
+    height: 8px;
+    background-position: -515px -24px;
+}
+
+.i-ph17x17 {
+    height: 17px;
+    width: 17px;
+}
+
+.i-ph15x15 {
+    height: 15px;
+    width: 15px;
+}
+
+.i-tagarr {
+    width: 12px;
+    height: 8px;
+    background-position: -530px -5px;
+}
+
+.i-orderdown {
+    width: 9px;
+    height: 10px;
+    background-position: -371px -47px;
+}
+
+.i-orderup {
+    width: 9px;
+    height: 10px;
+    background-position: -397px -47px;
+}
+
+.i-orderdown-h {
+    width: 9px;
+    height: 10px;
+    background-position: -410px -47px;
+}
+
+.i-orderup-h {
+    width: 9px;
+    height: 10px;
+    background-position: -384px -47px;
+}
+
+.i-navcose {
+    width: 18px;
+    height: 18px;
+    background-position: -527px -17px;
+}
+
+
+/* 新版订单中心的五中按钮样式 start */
+
+.i-orderok {
+    width: 26px;
+    height: 26px;
+    background-position: -290px -284px;
+}
+
+.i-ordernotok {
+    width: 26px;
+    height: 26px;
+    background-position: -359px -284px;
+}
+
+.i-orderetyok {
+    width: 26px;
+    height: 26px;
+    background-position: -325px -284px;
+}
+
+.i-orderarrow {
+    width: 4px;
+    height: 60px;
+    background-color: #c3e47a;
+    display: block;
+}
+
+.i-orderarrow-h {
+    height: 4px;
+    width: 143px;
+    background-color: #c3e47a;
+    display: block;
+}
+
+.i-orderetyarrow {
+    width: 4px;
+    height: 60px;
+    background-color: #E5E5E5;
+    display: block;
+}
+
+.i-orderetyarrow-h {
+    height: 6px;
+    width: 143px;
+    background-color: #E5E5E5;
+    display: block;
+}
+
+
+/* 新版订单中心的五中按钮样式 end */
+
+.i-hasordered {
+    width: 123px;
+    height: 81px;
+    background-position: -131px -285px;
+}
+
+.i-new {
+    width: 27px;
+    height: 17px;
+    background-position: -101px -391px;
+}
+
+.i-goldmedal {
+    width: 34px;
+    height: 36px;
+    background-position: -279px -112px;
+}
+
+.i-silvermedal {
+    width: 34px;
+    height: 36px;
+    background-position: -298px -151px;
+}
+
+.i-bronzemedal {
+    width: 34px;
+    height: 36px;
+    background-position: -315px -112px;
+}
+
+.i-tagtop {
+    width: 17px;
+    height: 9px;
+    background-position: -349px -65px;
+}
+
+.i-banner-arr {
+    width: 8px;
+    height: 9px;
+    background-position: -423px -47px;
+}
+
+.i-arrsmallup {
+    width: 10px;
+    height: 10px;
+    background-position: -371px -93px;
+}
+
+.i-luser {
+    width: 18px;
+    height: 18px;
+    background-position: -131px -371px;
+}
+
+.i-lpass {
+    width: 16px;
+    height: 18px;
+    background-position: -152px -371px;
+}
+
+.i-dialog-warn {
+    width: 18px;
+    height: 18px;
+    background-position: -269px -473px;
+}
+
+.i-edit-orange {
+    height: 16px;
+    width: 16px;
+    background-position: -256px -371px;
+}
+
+.i-lphone {
+    width: 14px;
+    height: 19px;
+    background-position: -171px -370px;
+}
+
+.i-slogin {
+    width: 16px;
+    height: 14px;
+    background-position: -127px -23px;
+}
+
+.i-mlogin {
+    width: 10px;
+    height: 14px;
+    background-position: -156px -23px;
+}
+
+.i-pay-tip {
+    width: 18px;
+    height: 18px;
+    background-position: -190px -370px;
+}
+
+.i-login-warn {
+    width: 18px;
+    height: 18px;
+    background-position: -269px -473px;
+}
+
+.i-pay-right {
+    height: 18px;
+    width: 18px;
+    background-position: -269px -448px;
+}
+
+.i-pay {
+    width: 17px;
+    height: 17px;
+    background-position: -258px -286px;
+}
+
+.i-delivery {
+    width: 17px;
+    height: 17px;
+    background-position: -466px -284px;
+}
+
+.i-cai {
+    width: 15px;
+    height: 15px;
+    background-position: -397px -63px;
+}
+
+.i-zan {
+    width: 15px;
+    height: 15px;
+    background-position: -416px -63px;
+}
+
+.i-mapdialog-arr {
+    width: 19px;
+    height: 11px;
+    background-position: -61px -227px;
+}
+
+.i-wordtip {
+    width: 14px;
+    height: 7px;
+    background-position: -63px -264px;
+}
+
+.i-flowarrow {
+    width: 13px;
+    height: 10px;
+    background-position: -64px -252px;
+}
+
+.i-phonecall {
+    width: 50px;
+    height: 50px;
+    background-position: -308px -190px;
+}
+
+.i-cheque {
+    height: 17px;
+    width: 17px;
+    background-position: -386px -90px;
+}
+
+.i-top-tips-close {
+    width: 13px;
+    height: 13px;
+    background-position: -445px -45px;
+}
+
+.i-fire {
+    width: 24px;
+    height: 24px;
+    background-position: -100px -436px;
+}
+
+.i-fire2 {
+    width: 18px;
+    height: 24px;
+    background-position: -495px -244px;
+}
+
+.i-ticket-timer {
+    width: 26px;
+    height: 26px;
+    background-position: -258px -306px;
+}
+
+.i-discountip {
+    width: 11px;
+    height: 8px;
+    background-position: -446px -66px;
+}
+
+.i-triangledown {
+    width: 12px;
+    height: 6px;
+    background-position: -63px -281px;
+}
+
+.i-triangleup {
+    background-position: -63px -273px;
+}
+
+.i-ticket-timer-white {
+    width: 26px;
+    height: 26px;
+    background-position: -258px -335px;
+}
+
+.i-ticket-timer-grey {
+    width: 26px;
+    height: 26px;
+    background-position: -287px -335px;
+}
+
+.i-predict-timer {
+    width: 17px;
+    height: 17px;
+    background-position: -294px -371px;
+}
+
+.i-money {
+    width: 34px;
+    height: 22px;
+    background-position: -235px -394px;
+}
+
+.i-hook-20 {
+    width: 20px;
+    height: 20px;
+    background-position: -100px -466px;
+}
+
+.i-hook-26 {
+    width: 26px;
+    height: 26px;
+    background-position: -142px -158px;
+}
+
+.i-goldmedal-n {
+    width: 34px;
+    height: 36px;
+    background-position: -361px -112px;
+}
+
+.i-silvermedal-n {
+    width: 34px;
+    height: 36px;
+    background-position: -401px -112px;
+}
+
+.i-bronzemedal-n {
+    width: 34px;
+    height: 36px;
+    background-position: -441px -112px;
+}
+
+.i-rank {
+    font-size: 18px;
+    font-style: italic;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-position: -360px -157px;
+}
+
+.i-fan {
+    width: 17px;
+    height: 17px;
+    background-position: -412px -90px;
+}
+
+.i-basket {
+    width: 20px;
+    height: 17px;
+    background-position: -466px -42px;
+}
+
+.i-banner-point {
+    width: 8px;
+    height: 8px;
+    background-position: -495px -68px;
+}
+
+.i-banner-prev {
+    width: 14px;
+    height: 18px;
+    background-position: -510px -40px;
+}
+
+.i-banner-next {
+    width: 14px;
+    height: 18px;
+    background-position: -510px -62px;
+}
+
+.i-brand-dinner {
+    width: 39px;
+    height: 36px;
+    background-position: -481px -151px;
+}
+
+.i-brand-snack {
+    width: 39px;
+    height: 36px;
+    background-position: -524px -112px;
+}
+
+.i-new-business {
+    width: 39px;
+    height: 36px;
+    background-position: -481px -112px;
+}
+
+.i-phone-new {
+    width: 10px;
+    height: 14px;
+    background-position: -303px -475px;
+}
+
+.i-tuan-new {
+    width: 14px;
+    height: 14px;
+    background-position: -301px -451px;
+}
+
+.i-pre-order {
+    width: 26px;
+    height: 26px;
+    background-position: -403px -158px;
+}
+
+.i-rest-poi-new {
+    width: 26px;
+    height: 26px;
+    background-position: -443px -158px;
+}
+
+.i-yarrow {
+    width: 8px;
+    height: 6px;
+    background-position: -78px -274px;
+}
+
+.i-sort-triangledown {
+    width: 36px;
+    height: 12px;
+    background-position: -57px -345px;
+}
+
+.i-sort-triangleup {
+    width: 36px;
+    height: 12px;
+    background-position: -57px -325px;
+}
+
+.i-hisbar-timer {
+    height: 14px;
+    width: 14px;
+    background-position: -272px -394px;
+}
+
+.i-hisbar-cy {
+    width: 17px;
+    height: 14px;
+    background-position: -270px -410px;
+}
+
+.i-poi-timer {
+    width: 14px;
+    height: 14px;
+    background-position: -272px -426px;
+}
+
+.i-ding {
+    width: 17px;
+    height: 17px;
+    background-position: -438px -90px;
+}
+
+.i-heart-12 {
+    width: 12px;
+    height: 12px;
+    background-position: -548px -45px;
+}
+
+.i-heart-22 {
+    width: 22px;
+    height: 20px;
+    background-position: -493px -87px;
+}
+
+.i-heart-16 {
+    width: 16px;
+    height: 16px;
+    background-position: -547px -89px;
+}
+
+.i-poi-fav1 {
+    width: 38px;
+    height: 38px;
+    background-position: -325px -352px;
+}
+
+.i-poi-fav2 {
+    width: 38px;
+    height: 38px;
+    background-position: -325px -314px;
+}
+
+.i-saveup-restaurant {
+    width: 28px;
+    height: 24px;
+    background-position: -57px -368px;
+}
+
+.i-phone-gold {
+    width: 10px;
+    height: 14px;
+    background-position: -549px -64px;
+}
+
+.i-lottery-new {
+    width: 38px;
+    height: 26px;
+    background-position: -55px -401px;
+}
+
+.i-img-show-close {
+    width: 48px;
+    height: 48px;
+    background-position: 0 -446px;
+}
+
+.i-gold-circle {
+    width: 22px;
+    height: 22px;
+    background-position: -13px -361px;
+}
+
+.i-business-new {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -437px;
+}
+
+.i-skuplus {
+    width: 22px;
+    height: 22px;
+    background-position: -528px -203px;
+}
+
+.i-skuminus {
+    width: 22px;
+    height: 22px;
+    background-position: -506px -203px;
+}
+
+.i-star-empty-n {
+    width: 17px;
+    height: 17px;
+    background-position: -329px -474px;
+}
+
+.i-star-full-n {
+    width: 17px;
+    height: 17px;
+    background-position: -329px -448px;
+}
+
+.i-zan-n {
+    width: 15px;
+    height: 15px;
+    background-position: -162px -450px;
+}
+
+.i-zan-yellow {
+    width: 15px;
+    height: 15px;
+    background-position: -162px -472px;
+}
+
+.i-user-circle {
+    width: 38px;
+    height: 38px;
+    background-position: -366px -196px;
+}
+
+.i-msg-grey {
+    width: 16px;
+    height: 16px;
+    background-position: -187px -450px;
+}
+
+.i-blue-circle {
+    width: 13px;
+    height: 13px;
+    background-position: -525px -172px;
+}
+
+.i-shopping-cart-new {
+    width: 26px;
+    height: 26px;
+    background-position: -412px -202px;
+}
+
+.i-home-new {
+    width: 20px;
+    height: 18px;
+    background-position: -241px -447px;
+}
+
+.i-basket-new {
+    width: 20px;
+    height: 17px;
+    background-position: -241px -473px;
+}
+
+.i-dialog-bhook-new {
+    width: 36px;
+    height: 36px;
+    background-position: -308px -244px;
+}
+
+.i-dialog-shook-new {
+    width: 36px;
+    height: 36px;
+    background-position: -401px -244px;
+}
+
+.i-phonecall-new {
+    width: 36px;
+    height: 36px;
+    background-position: -355px -244px;
+}
+
+.i-dialog-bwarn-new {
+    width: 36px;
+    height: 36px;
+    background-position: -448px -244px;
+}
+
+.i-money-new {
+    width: 32px;
+    height: 20px;
+    background-position: -236px -422px;
+}
+
+.i-user-pos {
+    width: 14px;
+    height: 18px;
+    background-position: -520px -250px;
+}
+
+.i-busy-poi-new {
+    width: 26px;
+    height: 26px;
+    background-position: -490px -284px;
+}
+
+
+.icon-img(@url){
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(@url);
+}
+.icon-order{
+    .icon-img('../images/icon/1.png');
+}
+.icon-giving{
+    .icon-img('../images/icon/2.png');
+}
+.icon-discount{
+    .icon-img('../images/icon/3.png');
+}
+.icon-first{
+    .icon-img('../images/icon/4.png');
+}
+.icon-minus{
+    .icon-img('../images/icon/5.png');
+}

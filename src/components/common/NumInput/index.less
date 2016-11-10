@@ -1,0 +1,50 @@
+/*
+ * @Author: mocheng
+ */
+/* input_num start */
+.input_num{
+    @size: 27px;
+    @pd: @size - 1;
+    @btn_bg: #fff;
+    @btn_bd: #ccc;
+    @btn_c: #bfbfbf;
+    @btn_c_dis: #333;
+    line-height: @size;
+    height: @size;
+    padding: 0 @pd;
+    width: 115px;
+    position: relative;
+    display: inline-block;
+    *{
+        outline: none;
+    }
+    &>button{
+        border: 1px solid @btn_bd;
+        background: @btn_bg;
+        color: @btn_c;
+        width: @size;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        &:disabled{
+            cursor: no-drop;
+            color: @btn_c;
+        }
+    }
+    .btn_add{
+        right: 0;
+    }
+    .btn_minus{
+        left: 0;
+    }
+    input{
+        width: 100%;
+        height: 100%;
+        border: 1px solid @btn_bd;
+        padding: 0 5px;
+        text-align: center;
+        color: @btn_c_dis;
+    }
+
+}
+/* input_num ent */

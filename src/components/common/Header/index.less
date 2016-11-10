@@ -1,0 +1,130 @@
+/*
+ * @Author: mocheng
+ */
+@import url('../../../styles/theme.less');
+@header-height: 80px;
+.header {
+    height: @header-height;
+    background: #fff;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+    .header-content {
+        width: @max-width;
+        margin: auto;
+        position: relative;
+        height: 100%;
+        .left-logo {
+            width: 166px;
+            height: 61px;
+            padding-top: 24px;
+            img {
+                padding-top: 8px;
+                width: 144px;
+                height: 60px;
+                display: inline-block;
+            }
+        }
+        .menu {
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 50px;
+            position: absolute;
+            height: 100%;
+            text-align: center;
+            line-height: 80px;
+            .menu-item {
+                color: #898989;
+                text-decoration: none;
+                padding: 0px 14px;
+                &:hover {
+                    color: #fa9700;
+                }
+            }
+        }
+        .search-bar {
+            display: inline-block;
+            float: right;
+            height: 100%;
+            width: 410px;
+            padding: 20px 0px;
+            .search-content {
+                height: 100%;
+                border: 2px solid @primary-color;
+                border-radius: 25px;
+                position: relative;
+                .search-icon {
+                    color: @primary-color;
+                    font-size: 24px;
+                    display: inline-block;
+                    width: 10%;
+                    text-align: center;
+                    vertical-align: sub;
+                    height: 100%;
+                }
+                .search-wrap {
+                    width: 70%;
+                    height: 100%;
+                    display: inline-block;
+                    .search-input {
+                        font-size: 14px;
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                    }
+                    .search-auto-complete {
+                        position: absolute;
+                        top: 110%;
+                        left: 5%;
+                        width: 90%;
+                        z-index: 10;
+                        background: #fff;
+                        border: 1px solid #ebebeb;
+                        background-color: #fff;
+                        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+                        padding: 10px 0;
+                    }
+                    .search-input-item {
+                        .clearfix();
+                        padding: 2px 15px;
+                        background: #fff;
+                        cursor: pointer;
+                        &.active,
+                        &:hover{
+                            background: #fffdf0;
+                        }
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            margin: 1px;
+                            float: left;
+                        }
+                        .text {
+                            margin-left: 45px;
+                            height: 32px;
+                            line-height: 32px;
+                            color: #333;
+                            .other{
+                                float: right;
+                                height: 100%;
+                                color: #898989;
+                            }
+                        }
+                    }
+                }
+                .search-btn {
+                    width: 20%;
+                    height: 100%;
+                    font-size: 18px;
+                    float: right;
+                    background: @primary-color;
+                    border: 1px solid @primary-color;
+                    border-radius: 0px 25px 25px 0px;
+                    cursor: pointer;
+                    color: #6b450a;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
